@@ -1,0 +1,14 @@
+import discord
+from discord.ext.commands import Bot
+from discord.ext import commands
+import asyncio
+import time
+
+Client= discord.Client()
+client= commands.Bot(command_prefix = "#")
+
+@client.event
+async def on_ready ():
+    print ("Bot je spreman!")
+
+client.run("NDAwNDQ2NzU3MDMwMzMwMzY4.DTby2A.IIw0pj0m9_RSOVp7pj4tGHTUsb4")
